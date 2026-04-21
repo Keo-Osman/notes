@@ -22,8 +22,35 @@ $$
 ***
 # Basic Properties
 ## Expectation
-By definition the expectation is $\lambda$ but we can also prove it from the PMF.
+By definition $\mathbb{E}[X] = \lambda$ but we can also prove it from the PMF.
+
+$$
+\begin{aligned}
+\mathbb{E}[X] &= \sum xP(x=x) \\
+&= \sum_{x=0}^{\infty}x\cdot \frac{\lambda^{x}e^{-\lambda}}{x} \\
+&= \lambda e^{-\lambda} \sum_{x=1}^{\infty} \frac{\lambda^{x-1}}{(x-1)!} \\
+&= \lambda e^{ -\lambda } e^{\lambda} \\
+&= \lambda
+\end{aligned}
+$$
+## Variance
+The Poisson also has variance $\lambda$ which we can prove directly.
+
+$$
+\begin{aligned}
+\mathbb{E}[X^{2}] &= \sum_{x=0}^{\infty}x^{2}P(X=x) \\
+&= \sum_{x=0}^{\infty} x^{2} \frac{e^{ -\lambda }\lambda^{x}}{x!} \\
+&= \lambda e^{ -\lambda }\sum_{x=1}^{\infty}x \cdot \frac{\lambda^{x-1}}{(x-1)!} \\
+&= \lambda e^{ -\lambda }\sum_{y=0}^{\infty}(y+1) \cdot \frac{\lambda^{y}}{y!} \\
+&= \lambda e^{ -\lambda }\left[\sum_{y=0}^{\infty}y \cdot \frac{\lambda^{y}}{y!} + \sum_{y=0}^{\infty} \frac{\lambda^{y}}{y!}\right] \\ 
+&= \lambda e^{ -\lambda }\left[\lambda \sum_{z=0}^{\infty} \cdot \frac{\lambda^{z}}{z!} +  e^{ \lambda }\right] \\ 
+&= \lambda e^{ -\lambda }\left[\lambda e^{ \lambda } + e^{ \lambda } \right] \\
+&= \lambda^{2}+\lambda \\
+\\
+\operatorname{Var}(X) &= \mathbb{E}[X^{2}] - \mathbb{E}[X]^{2} \\
+&= \lambda^{2}+\lambda - \lambda^{2} \\
+&= \lambda
+\end{aligned}
 
 $$
 
-$$
