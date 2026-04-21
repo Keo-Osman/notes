@@ -1,0 +1,1 @@
+Moments need a pivot. Calculate the torque with $$\text{Force}\times\text{Perpindicular Distance}\equiv\text{Perpindicular Force}\times\text{Distance}$$
