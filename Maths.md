@@ -73,5 +73,8 @@ tags:
 17. [[Wilson's Theorem]]
 # Statistics
 1. [[Bayesian Data Assimilation Guide]]
-2. [[Multiple Continuous Random Variables]]
-3. [[Single Continuous Random Variable]]
+2. [[Bayes' Theorem]]
+3. **Distributions**
+	1. [[Poisson Distribution]]
+4. [[Multiple Continuous Random Variables]]
+5. [[Single Continuous Random Variable]]

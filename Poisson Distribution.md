@@ -54,3 +54,19 @@ $$
 
 $$
 
+***
+# Advanced Properties
+#### Theorem - Addition of Poisson
+
+$$
+X \sim \operatorname{Po}(\lambda_{1}), \  Y \sim \operatorname{Po}(\lambda_{2}) \implies (X+Y) \sim \operatorname{Po}(\lambda_{1}+\lambda_{2})  
+$$
+##### Proof
+$$
+\begin{aligned}
+P(X+Y = k) &= \sum_{i=0}^{k}P(X=i)P(Y=k-i) \\
+&= \sum_{i=0}^{k} \frac{e^{ -\lambda_{1} }\lambda_{1}^{i}}{i!} \cdot \frac{e^{ -\lambda_{2} }\lambda_{2}^{k-i}}{(k-i)!} \\
+&= \frac{e^{ -(\lambda_{1}+\lambda_{2}) }}{k!}\sum_{i=0}^{k} \frac{k!}{i!(k-i!)} \lambda_{1}^{i}\lambda_{2}^{k-i} \\
+&= \frac{e^{ -(\lambda_{1}+\lambda_{2}) }}{k!}(\lambda_{1}+\lambda_{2})^{k}
+\end{aligned}
+$$
