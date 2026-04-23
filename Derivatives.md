@@ -76,7 +76,7 @@ This means that at some point $c$ the slop of the tangent is equal to the slope 
 
 INSERT PROOF
 
----
+***
 # [[Concavity]]
 1. $f''(x)>0 \ \forall x \in I\implies f$ is on $I$ (convex downward/concave upward)
 2. $f''(x)<0 \ \forall x \in I \implies f$ is concave on $I$ (convex upward/convex downward)
