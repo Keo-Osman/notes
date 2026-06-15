@@ -31,34 +31,8 @@ Suppose $f$ is continuous on $[-a,a]$ then:
 4. $\displaystyle \left| \int_{a}^{b}f(x)dx \right| \leq \int_{a}^{b}|f(x)|dx$
 
 ***
-# Common Results
-$$
-\begin{aligned}
-&\int x^n dx = \frac{x^{n+1}}{n+1} + c &&\int e^x dx = e^x + c\\
-&\int \frac{1}{x} dx = \ln|x| + c &&\int \cos x dx = \sin x + c \\
-&\int \sin x dx = -\cos x + c &&\int \sec^2 x = \tan x + c\\
-&\int \csc(x) \cot x dx = -\csc x + c &&\int \csc^2 x dx = -\cot x + c\\
-&\int \sec x \tan x dx = \sec x + c
-\end{aligned}
-$$
-# Techniques
-## Reverse Chain Rule
- $$\int f'(ax + b) dx = \frac{1}{a}f(ax + b) + c \quad \int \frac{f'(x)}{f(x)} dx = \ln{f(x)}\quad\int f'(x)(f(x))^n dx= \frac{1}{n+1}(f(x))^{n+1}$$ 
-## Substitution
-Sometimes you can simplify an integral by changing the variable. This process is similar to using the chain rule in differentiation and is called integration by substitution.
 
-$\displaystyle \frac{d}{dx} [F(g(x))] = F'(g(x)) \cdot g'(x)$ using $v = g(x)$
-$\displaystyle \int f(g(x))g'(x) = F(g(x)) + C = F(v) + C = \int f(v)dv$
 
-If $v = g(x)$ is differentiable with range $I$ and $f$ is continuous on $I$
-
-$\int f(g(x))g'(x) = \int f(v)dv$
-$\int_a^b f(g(x))g'(x) = F(g(b)) - F(g(a)) \Rightarrow \int_a^b f(g(x))g'(x) = \int_{g(a)}^{g(b)} f(v)dv$
-$\int_{g(a)}^{g(b)} f(v)dv = F(g(b)) - F(g(a))$
-## Integration By Parts
-$$\int u \frac{dv}{dx} dx = uv - \int v \frac{du}{dx} dx$$
-
-***
 # Improper integrals
 The integral $\int_a^b f(x)dx$ is improper if:
 1. One or both of the limits are $\pm \infty$ or
@@ -75,7 +49,3 @@ If $f(x)$ has mean value $\bar{f}$ over the interval $[a,b]$ then:
 2. $kf(x)$ has mean value $k\bar{f}$, $k \in \mathbb{R}$
 
 ***
-# Reduction 
-The Reduction formula allows you to write an integral as a recurrence relation. This is generally used for integrals with high powers that would require many **integration by parts** iterations.
-$$I_n = \int g(x,n)dx = \sum_{r=0}^{n-1} g_r(n)I_r$$
-You can use the reduction formula in conjunction with a substitution $r = g(x)$ and the Method of Differences to compute tricky summations.
