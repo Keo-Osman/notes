@@ -1,3 +1,8 @@
+---
+tags:
+  - physics
+---
+
 $$
 \begin{aligned}
 F &= h_{2}\rho gA - h_{1}\rho gA\\
@@ -5,4 +10,5 @@ F &= h_{2}\rho gA - h_{1}\rho gA\\
 &=V\rho g\\
 &=mg\\
 &=W
-\end{aligned}$$
+\end{aligned}
+$$

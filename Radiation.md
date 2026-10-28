@@ -1,3 +1,8 @@
+---
+tags:
+  - physics
+---
+
 Radiation is **random** and **spontaneous**
 *Random* 
 - Can't predict.

@@ -1,3 +1,8 @@
+---
+tags:
+  - maths
+---
+
 # Definition
 $$
 X \sim \operatorname{Po}(\lambda) \quad P(X=x) = \frac{e^{-\lambda}\lambda^{x}}{x!} 

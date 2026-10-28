@@ -1,3 +1,7 @@
+---
+tags:
+  - maths
+---
 # Common Results
 
 ## Trig
